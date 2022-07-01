@@ -1,0 +1,119 @@
+<link rel="stylesheet" href="/stylesheets/home.css">
+<!-- navbar starts here -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #00001a;">
+    <!-- Brand -->
+    <a href="/users/welcome"><img src="/stylesheets/logo.JPG" width=110 height=30></a>
+    
+    <!-- toggle button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Links -->
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="/users/welcome">Home</a>                     
+            </li>
+        
+            <li class="nav-item active">
+            <a class="nav-link" href="/users/action">Action</a>                     
+            </li>
+            
+            <li class="nav-item">
+            <a class="nav-link" href="/users/animated">Animated</a>
+            </li>
+        
+            <li class="nav-item">
+            <a class="nav-link" href="/users/crime">Crime</a>
+            </li>
+        
+            <li class="nav-item">
+            <a class="nav-link" href="/users/drama">Drama</a>
+            </li>
+        
+            <li class="nav-item">
+            <a class="nav-link" href="/users/horror">Horror</a>
+            </li>
+        
+            <li class="nav-item">
+            <a class="nav-link" href="/users/romance">Romance</a>
+            </li>
+        
+            <li class="nav-item">
+            <a class="nav-link" href="/users/sci-fi">Science-fiction</a>
+            </li>
+        
+            <li class="nav-item">
+            <a class="nav-link" href="/users/thriller">Thriller</a>
+            </li>
+            <%- include ("./partials/details"); %>
+        </ul>
+    </div>
+    
+</nav>
+
+<!-- navbar ends here -->
+
+<div class="container" style="margin-top: 100px;">
+<div id="movies" class="row">
+    <!-- grid wil be generated -->
+</div>
+
+</div>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+<!-- jquery cdn -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- axios cdn -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+<!--Footer HTML Starts Here!!!-->
+<br><br>
+
+<div class="container-fluid foot_cont">
+<div class="row">
+    <div class="col-sm-5"><div><hr class="foot_hr"></div></div>
+    <div class="col-sm-2 foot_lm"><a href="/users/learn_more" class="foot_links" style="text-decoration: none;">L E A R N &nbsp;&nbsp;M O R E</a> </div>
+    <div class="col-sm-5"><hr class="foot_hr"></div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-4 foot_pp"><a href="/users/learn_more" class="foot_links">  P R I V A C Y &nbsp;&nbsp; P O L I C Y</a></div>
+    <div class="col-sm-4 "></div>
+    <div class="col-sm-4 foot_num"><a href="/users/learn_more" class="foot_links"><i>99123-99123</i></a></div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-4 foot_TC">
+    <a href="/users/learn_more" class="foot_links">
+    T E R M S &nbsp;&&nbsp; C O N D I T I O N S
+    </a>
+    </div>
+    <div class="col-sm-4 foot_images">
+    <a href="/users/learn_more" class="foot_links"><span class="foot_image"><img src="/stylesheets/fb2.png" alt="fb" height="50rem" width="50rem" class="foot_image_fb">&nbsp;&nbsp;</span></a>
+    <a href="/users/learn_more" class="foot_links"><span class="foot_image"><img src="/stylesheets/insta2.png" alt="fb" height="50rem" width="50rem" class="foot_image_insta">&nbsp;&nbsp;</span></a>
+    <a href="/users/learn_more" class="foot_links"><span class="foot_image"><img src="/stylesheets/twitter2.png" alt="twitter" height="50rem" width="50rem" class="foot_image_twitter"></span></a>
+    </div>
+    <div class="col-sm-4 foot_mail"><a href="/users/learn_more" class="foot_links"><i>pickaflick@gmail.com</i></a></div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-4 foot_abt"><a href="/users/learn_more" class="foot_links"> A B O U T</a></div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 foot_mem"><a href="/users/learn_more" class="foot_links"> M E M B E R S H I P</a></div>
+</div>
+</div>
+
+<div class="loader-wrapper">
+<span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<script src="/stylesheets/action.js"></script>
+<script src="/stylesheets/movie.js"></script>

@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="/stylesheets/confirm.css">
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+<div class='container'>
+    <div class='window'>
+        <div class='order-info'>
+        <div class='order-info-content'>
+            <h2>Booking Summary</h2>
+            <!-- <div class='line'></div> -->
+            <table class='order-table'>
+            <tbody>
+                <tr>
+                <td><img src='https://dl.dropboxusercontent.com/s/sim84r2xfedj99n/%24_32.JPG' class='full-width' id="movImg"></img>
+                </td>
+                <td>
+                    <br> <span class='thin' id="m1"></span>
+                    <br> <span class='thin small' id="s1"> <br><br></span>
+                </td>
+    
+                </tr>
+                <tr>
+                <td>
+                    <div class='price' id="p1"></div>
+                </td>
+                </tr>
+            </tbody>
+    
+            </table>
+            <div class='line'></div>
+            <table class='order-table'>
+            <tbody>
+                <tr>
+                <td><img src='/stylesheets/meal.png' class='full-width'></img>
+                </td>
+                <td>
+                    <span class='thin'>Add Ons</span>
+                    <!-- <br><span class='thin small'> Color: Olive, Size: 20L</span> -->
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <div class='price' id="p2">Rs 0</div>
+                </td>
+                </tr>
+            </tbody>
+            </table>
+            <div class='line'></div>
+            <div class='total'>
+            <span style='float:left;'>
+                <div class='thin dense'>GST 18%</div>
+                TOTAL
+            </span>
+            <span style='float:right; text-align:right;'>
+                <div class='thin dense gst1'></div>
+                <h5><b><span id="total1"></span></b></h5>
+            </span>
+        </div>
+        </div>
+    </div>
+    <div class='credit-info'>
+        <div class='credit-info-content'>
+            <table class='half-input-table'>
+                <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card' onclick="select()">Visa</div>
+                <div class='dropdown-select'>
+                    <ul>
+                        <li>Master Card</li>
+                        <li>American Express</li>
+                    </ul>
+                </div>
+                </td></tr>
+            </table>
+        <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+
+        <div class="form-group"> 
+            <form method="post" action="/users/confirm" name="form" onsubmit="return paid()">
+                <input type="hidden" id="hi"/>
+                <input type="hidden" id="moviename" name="moviename"/>
+                <input type="hidden" id="seating" name="seating"/>
+                <input type="hidden" id="addonscost" name="addonscost"/>
+                <label for="cc-number" class="control-label">Card number</label> <input name="number" id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" maxlength=19 required> </div>
+                <span id="error1"></span>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group"> <label for="cc-exp" class="control-label">Expiry</label> <input name="expiry" id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••" maxlength=7 required> </div>
+                        <span id="error2"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group"> <label for="cc-cvc" class="control-label">CVV</label> <input name="cvc" id="cc-cvc" type="password" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="•••" maxlength=3 required> </div>
+                        <span id="error3"></span>
+                    </div>
+                </div>
+                <div class="form-group"> <label for="numeric" class="control-label">Card holder name</label> <input name="name" type="text" class="input-lg form-control" required> </div>
+                <button type="submit" id="pay-btn">Make payment</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+<script type="text/javascript" src="/stylesheets/movie.js"></script>
+<script type="text/javascript" src="/stylesheets/book.js"></script>
+<script type="text/javascript" src="/stylesheets/confirm.js"></script>
+<script type="text/javascript" src="/stylesheets/pay.js"></script>

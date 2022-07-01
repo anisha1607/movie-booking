@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.xyz {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 30px;
+}
+
+.seat {
+  padding:8px;
+  font-size:10px;
+  font-family: "Helvetica";
+  background-color: #444451;
+  height: 28px;
+  width: 28px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+  color: #12262b;
+}
+
+.seat.occupied {
+  background-color: #fff;
+  color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.a2{
+  display: flex;
+  align-self: center;
+}
+
+.screen {
+  background-color: #fff;
+  height: 50px;
+  width: 25%;
+  margin: 70px 0px 30px 0px;
+  align-self: center;
+  transform: perspective(25px) rotateX(-1.25deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  padding: 4% 4% 5% 10%;
+  color: #12262b;
+}
+
+p.text {
+  align-self: center;
+}
+
+p.text span {
+  color: #6feaf6;
+  align-self: center;
+}
+
+#selseatsdiv{
+  color: #00ffff;
+  align-self: center;
+}
+
+#bookedseatsdiv{
+  color: #66ff66;
+  align-self: center;
+}
+
+#booking{
+  color: white;
+}
+
+.addons{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  background: url("cardbackground.jpg");
+  float: left;
+  margin-left: 100px;
+  border:#ff7700;
+  border-style: double;
+}
+
+.card h5{
+  color: #00ffff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cost{
+  color: #4dff4d;
+}
+
+.list-group-item{
+  background-color: transparent;
+  color: aliceblue;
+}
+
+#billsum{
+  background: url("billbackground.jpg");
+  border: none;
+  margin: 0% auto;
+}
+
+.btn{
+  /* background-color: #f44336; */
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0% auto;
+  border-radius: 5px;
+}
+
+
+#btn, #trailer{
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0% auto;
+  padding: 10px;
+  border-radius: 5px;
+}

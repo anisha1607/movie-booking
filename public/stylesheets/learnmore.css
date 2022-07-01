@@ -1,0 +1,38 @@
+body{
+    background: url(background1.jpg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     margin:4rem;
+     font-family: cursive;
+}
+
+.heading{
+    color: whitesmoke;
+    font-size: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    border: 0.5rem;
+    
+}
+
+.content{
+    color: whitesmoke;
+    font-size: 1.05rem;
+    text-align: center;
+    word-spacing: 0.35rem;
+    letter-spacing: 0.1rem;
+}
+
+.foot_image_fb{
+    border-radius: 50%;
+}
+
+.foot_image_twitter{
+    border-radius: 50%;
+}
+
+section{
+    text-decoration: underline;
+}

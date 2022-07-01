@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.xyz {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   height: 130vh; 
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.abc {
+  perspective: 1000px;
+  margin-bottom: 30px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.seat {
+  padding:3px;
+  font-size:10px;
+  font-family: "Helvetica";
+  background-color: #444451;
+  height: 18px;
+  width: 18px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+  color: #12262b;
+}
+
+.seat.occupied {
+  background-color: #fff;
+  color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 300px;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.a2{
+  display: flex;
+  margin-left: 480px;
+}
+
+.screen {
+  background-color: #fff;
+  height: 50px;
+  width: 20%;
+  margin: 15px 0;
+  margin-left:480px;
+  transform: perspective(25px) rotateX(-1.25deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  padding:50px 85px 75px 85px;
+  color: #12262b;
+}
+
+p.text {
+  margin: 5px 0px 5px 300px;
+  
+}
+
+p.text span {
+  color: #6feaf6;
+}
+
+#selseatsdiv{
+  color: #00ffff;
+  text-align: center;
+  margin-left:300px;
+}
+
+#bookedseatsdiv{
+  color: #66ff66;
+  text-align: center;
+  margin-left:300px;
+}
+
+.a1{
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 300px;
+  border-radius: 5px;
+}
+
+.a1 :hover{
+  cursor: pointer;
+  background-color: #ff1a1a;
+}
+
+.btn1{
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: none;
+  font-size: 15px;
+  margin-left: 300px;
+  border-radius: 5px;
+}
+
+.btn1:hover{
+  cursor: pointer;
+  background-color: #ff1a1a;
+}
+
+#booking{
+  color: white;
+}
+
+.addons{
+  margin-right:400px;
+}
+
+/* .card{
+  float: left;
+  margin-left: 200px;
+} */
+
+.list-group-item{
+  background-color:  #12262b;
+  color: aliceblue;
+}

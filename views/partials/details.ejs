@@ -1,0 +1,14 @@
+<% if(typeof username == 'undefined' || username === '') { %>
+  <button class="btn btn-danger navbar-btn"><a class="link1" href="/users/signup">Sign up</a></button>
+  <button class="btn btn-danger navbar-btn" style="margin-left:15px; padding-left: 16px; padding-right: 16px;"><a class="link1" href="/users/login">Log in</a></button>
+<% } else { %>
+<li class="nav-item dropdown" id="navbaruser">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src='/stylesheets/user.png' height="30px" style="margin-right: 10px;"><%= username %>
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin-left:400px;">
+    <a class="dropdown-item" href="/users/bookings">My Bookings</a>
+    <a class="dropdown-item" href="/users/logout">Log Out</a>
+  </div>
+</li>
+<% } %>

@@ -1,0 +1,290 @@
+@import url('//fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body{
+  background: url(background1.jpg) center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 1100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown-menu{
+  background-color: #00001a;
+}
+
+#navbarDropdownMenuLink{
+  color: white;
+}
+
+.dropdown-item{
+  color: white;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+.navbar-nav{
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-item{
+    margin-left: 10px;
+}
+
+.link1, .link1:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.carousel .carousel-item {
+    height: 400px;
+  }
+  
+.carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+}
+
+#movies img{
+  width: 100%;
+  padding: 20px;
+}
+
+#movies :hover{
+  transition: 0.2s ease;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+@media(min-width:960px){
+  #movies .col-md-3 .col-lg-3 .well{
+    height: 390px;
+    width: 50px;
+  }
+
+  #movies .col-md-3 img{
+    height:240px;
+  }
+}
+
+#movie img{
+  width: 80%;
+  height: 390px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.abc{
+  color: white;
+  text-align: center;
+}
+
+.btn-a{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* li:first-child{
+  text-align: center;
+} */
+
+.disp1{
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+.cap1, .cap2, .cap3{
+  font-family: 'Alfa Slab One';
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  -webkit-text-stroke:0.6px #e65c00;
+}
+
+/* Footer CSS Starts here!!!!
+!!!!! */
+
+
+.foot_lm{
+  text-align: center;
+  color:whitesmoke; 
+  font-weight: bold;
+  padding-top: 4px;
+}
+
+.foot_lm a{
+  text-decoration: none;
+}
+
+.foot_pp{
+  text-align: center;
+  color:whitesmoke; 
+  font-size: 0.85rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  transition: 0.8s;
+}
+
+.foot_pp:hover{
+  cursor: pointer;
+  letter-spacing: 0.18rem;
+  transition: 0.8s;
+}
+
+.foot_num{
+  text-align: center;
+  color:whitesmoke; 
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  transition: 0.8s;
+}
+
+.foot_num:hover{
+  cursor: pointer;
+  letter-spacing: 0.23rem;
+  transition: 0.8s;
+}
+
+.foot_TC{
+  text-align: center;
+  color:whitesmoke; 
+  font-size: 0.85rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  transition: 0.8s;
+  padding-top: 0.688rem;
+}
+
+.foot_TC:hover{
+  cursor: pointer;
+  letter-spacing: 0.16rem;
+  transition: 0.8s;
+}
+
+.foot_abt{
+  text-align: center;
+  color:whitesmoke; 
+  font-size: 0.85rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+}
+
+.foot_abt:hover{
+  cursor: pointer;
+  letter-spacing: 0.21rem;
+  transition: 0.8s;
+}
+
+.foot_mem{
+  text-align: center;
+  color:whitesmoke; 
+  font-size: 0.9rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  transition: 0.8s;
+}
+
+.foot_mem:hover{
+  cursor: pointer;
+  letter-spacing: 0.21rem;
+  transition: 0.8s;
+}
+
+.foot_mail{
+  text-align: center;
+  color:whitesmoke; 
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  transition: 0.8s;
+  padding-top: 0.688rem;
+}
+
+.foot_mail:hover{
+  cursor: pointer;
+  letter-spacing: 0.21rem;
+  transition: 0.8s;
+}
+
+.foot_image{
+  text-align: center;
+}
+
+.foot_image_fb, .foot_image_insta, .foot_image_twitter{
+  border-radius: 50%;
+  transition: 0.8s;
+}
+
+
+.foot_image_fb:hover, .foot_image_insta:hover, .foot_image_twitter:hover{
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+
+.foot_cont{
+  margin-bottom:  1.25rem;
+}
+
+
+.foot_images{
+  text-align: center;
+}
+
+.foot_hr{
+  border: whitesmoke solid 0.063rem;
+  width: 90%;
+}
+
+a.foot_links{
+  text-decoration: none;
+  color: whitesmoke;
+}

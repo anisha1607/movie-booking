@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+h1{
+    font-family: 'Passion One', cursive;
+    text-align: center;
+    color: #ff7700;
+    margin-bottom: 2%;
+    font-weight:500;
+}
+
+p{
+    color: #ff7700;
+    font-size: 125%;
+    text-align: center;
+}
+
+.card{
+    margin-left: 40.5%;
+    margin-top:2%;
+    background: url('/stylesheets/ticket.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(248, 0, 54);
+    padding:2%;
+    height: 50%;
+}
+
+.card p{
+    color:rgb(1, 248, 133);
+}
+

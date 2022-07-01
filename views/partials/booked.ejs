@@ -1,0 +1,16 @@
+<% if(movieName.length == 0) { %>
+    <p>No bookings made</p>
+<% } else { %>
+    <%  for(i=0; i<movieName.length; i++){ %>
+    <%  var seatsArray = seatsBooked[i].split(',').sort(); %>
+    <%  seatsBooked[i] = seatsArray.join(); %>
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><%= movieName[i] %></h5>
+                <p class="card-text"><%= seatsBooked[i] %></p>
+            </div>
+        </div> 
+    <% } %>
+    <br><br>
+<% } %>
+

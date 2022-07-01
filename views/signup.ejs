@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="/stylesheets/signup.css">
+<link rel="stylesheet" href="/stylesheets/home.css">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #00001a;">
+    <!-- Brand -->
+<a href="/users/welcome"><img src="/stylesheets/logo.JPG" width=110 height=30></a>
+
+<!-- toggle button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Links -->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="/users/welcome">Home</a>                     
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/action">Action</a>                     
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="/users/animated">Animated</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/crime">Crime</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/drama">Drama</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/horror">Horror</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/romance">Romance</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/sci-fi">Science-fiction</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/thriller">Thriller</a>
+        </li>
+
+    </ul>
+
+    <button class="btn btn-danger navbar-btn" style="margin-left:40px"><a class="link1" href="/users/signup">Sign up</a></button>
+
+    <button class="btn btn-danger navbar-btn" style="margin-left:15px; padding-left: 16px; padding-right: 16px;"><a class="link1" href="/users/login">Log in</a></button>
+
+</div>
+</nav>
+
+<div class="signup-form">
+    <form method="post" action="/users/signup" name="myform" onsubmit="return validate()">
+        <h2>Sign Up</h2>
+        <p>Please fill in this form to create an account!</p>
+        <hr>
+        <%- include ("./partials/messages"); %>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <span class="fa fa-user"></span>
+                    </span>                    
+                </div>
+            <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+
+                </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-paper-plane"></i>
+                    </span>                    
+                </div>
+                <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+            </div>
+            <span id="femail"></span>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                    </span>                    
+                </div>
+                <input type="password" class="form-control" name="password" placeholder="Password" required="required" id="pass">
+            </div>
+            <span id="fpass"></span>
+            <span id="fpass1"></span>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                        <i class="fa fa-check"></i>
+                    </span>                    
+                </div>
+                <input type="password" class="form-control" name="cpassword" placeholder="Confirm Password" required="required" id="cpass">
+            </div>
+            <span id="fcpass"></span>
+            <br>
+            <input type="checkbox" style="margin-left:20px" onclick="showPass()"><span style="padding-left:10px">Show Password</span></input>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+        </div>
+    </form> 
+    <div class="text-center">Already have an account? <a href="/users/login">Login here</a></div>
+</div>
+<script src="/stylesheets/signup.js"></script>

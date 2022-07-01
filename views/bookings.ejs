@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/stylesheets/home.css">
+<link rel="stylesheet" href="/stylesheets/bookings.css">
+<!-- navbar starts here -->
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #00001a;">
+    <!-- Brand -->
+<a href="/users/welcome"><img src="/stylesheets/logo.JPG" width=110 height=30></a>
+
+<!-- toggle button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Links -->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="/users/welcome">Home</a>                     
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/action">Action</a>                     
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="/users/animated">Animated</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/crime">Crime</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/drama">Drama</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/horror">Horror</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/romance">Romance</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/sci-fi">Science-fiction</a>
+        </li>
+    
+        <li class="nav-item">
+        <a class="nav-link" href="/users/thriller">Thriller</a>
+        </li>
+    
+    </ul>
+    <%- include ("./partials/details"); %>
+    
+</div>
+</nav>
+<!-- navbar ends here -->
+<br><br><br><br>
+<h1>Booked tickets</h1>
+<%- include ("./partials/booked"); %>
